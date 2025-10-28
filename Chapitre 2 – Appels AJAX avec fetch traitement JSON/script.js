@@ -1,5 +1,4 @@
-
-fetch("https://api.instagram.com/users/founticode")
+fetch("https://api.github.com/users/thelhaiti")
   .then(response => response.json())
   .then(data => {
     console.log("Données reçues :", data);
