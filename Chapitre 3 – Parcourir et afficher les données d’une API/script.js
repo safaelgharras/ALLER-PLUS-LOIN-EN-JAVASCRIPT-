@@ -2,12 +2,12 @@ let container = document.getElementById("articles");
 
 fetch('https://api.github.com/users/safaelgharras/repos')
   .then(response => response.json())
-  .then(posts => {
+  .then(repos => {
     let ul = document.createElement('ul');
 
-    posts.forEach(post => {
+    repos.forEach(repo => {
       let li = document.createElement('li');
-      li.textContent = post.name;
+      li.textContent = repo.name;
       ul.appendChild(li);
     });
 
@@ -17,3 +17,6 @@ fetch('https://api.github.com/users/safaelgharras/repos')
     container.innerText = "Erreur lors de la récupération des données.";
     console.error(error);
   });
+
+
+ 
