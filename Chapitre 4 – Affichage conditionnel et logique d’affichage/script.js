@@ -7,9 +7,7 @@ let produits = [
 
 let liste = document.getElementById("produits");
 
-
 let produitsFiltres = produits.filter(p => p.prix > 100);
-
 
 if (produitsFiltres.length === 0) {
   liste.innerHTML = "<li>Aucun produit en promotion.</li>";
