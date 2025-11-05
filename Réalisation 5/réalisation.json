@@ -1,0 +1,99 @@
+  [
+    { 
+    "nom": "YSL Escarpins Instinct ",
+    "prix": 11500,
+    "categorie": "YSL", 
+    "image": "Images/YSL Escarpins Instinct.jpg"
+    },
+
+    {
+     "nom": "YSL Opyum Sandal",
+     "prix": 10746, 
+     "categorie": "YSL", 
+     "image": "Images/YSL Opyum Sandal.jpg" 
+    },
+
+    { 
+     "nom": "Christian Dior J'Adior Slingback Pumps", 
+     "prix": 9612, 
+     "categorie": "Dior", 
+     "image": "Images/Christian Dior J'Adior Slingback Pumps.jpg" 
+    },
+
+    { 
+     "nom": "Christian Dior Heeled Slide Nude Patent Calfskin", 
+     "prix": 10530, 
+     "categorie": "Dior", 
+     "image": "Images/Dior Heeled Slide Nude Patent Calfskin.jpg" 
+    },
+
+    { 
+     "nom": "Versace Escarpins Medusa Aevitas", 
+     "prix": 9163, 
+     "categorie": "Versace", 
+     "image": "Images/Versace Escarpins Medusa Aevitas.jpg" 
+    },
+
+    {
+     "nom": "Versace V2025 Chain Sandal", 
+     "prix": 8910, 
+     "categorie": "Versace", 
+     "image": "Images/Versace V2025 Chain Sandal.jpg" 
+    },
+
+    { 
+     "nom": "Louboutin So Kate Pump", 
+     "prix": 7506, 
+     "categorie": "Louboutin", 
+     "image": "Images/Louboutin So Kate Pump.jpg" 
+    },
+
+    { 
+     "nom": "Louboutin Sandale Du Désert 100 sandals", 
+     "prix": 125000, 
+     "categorie": "Louboutin", 
+     "image": "Images/Louboutin Sandale Du Désert 100 sandals.jpg"
+    },
+
+    { 
+     "nom": "Cesare Paciotti Dagger Heel", 
+     "prix": 7020, 
+     "categorie": "Cesare Paciotti", 
+     "image": "Images/Cesare Paciotti Dagger Heel.jpg" 
+    },
+
+    { 
+     "nom": "Cesare Paciotti Blade Sandal", 
+     "prix": 7776, 
+     "categorie": "Cesare Paciotti", 
+     "image": "Images/Cesare Paciotti Blade Sandal.webp" 
+    },
+
+    { 
+     "nom": "Jimmy Choo Black Oriana 110 Sandal", 
+     "prix": 9900, 
+     "categorie": "Jimmy Choo", 
+     "image": "Images/Jimmy Choo Black Oriana 110 Sandal.jpg" 
+    },
+
+    {
+     "nom": "Jimmy Choo Saeda 100 Sandal", 
+     "prix": 10721, 
+     "categorie": "Jimmy Choo", 
+     "image": "Images/Jimmy Choo Saeda 100 Sandal.jpg" 
+    },
+
+    {
+      "nom": "Hermes Oran sandal ", 
+      "prix": 6500, 
+      "categorie": "Hermes", 
+      "image": "Images/Hermes Oran.jpg" 
+    },
+
+    { 
+     "nom": "Giulia Hermes Sandal in calfskin ", 
+     "prix": 11500, 
+     "categorie": "Hermes", 
+     "image": "Images/Giulia Hermes Sandal.jpg" 
+    }
+     ]

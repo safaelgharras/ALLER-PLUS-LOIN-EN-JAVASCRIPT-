@@ -1,0 +1,173 @@
+/* === POLICES LUXE === */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Cormorant+Garamond:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background: #f5f0e6; 
+    color: #4a1c1c;  
+    min-height: 100vh;
+    padding: 50px 20px;
+    line-height: 1.7;
+   
+}
+
+/* === TITRE PRINCIPAL === */
+h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #722f37; /* Bordeaux riche */
+    letter-spacing: 3px;
+    margin-bottom: 45px;
+    text-shadow: 0 2px 8px rgba(114, 47, 55, 0.15);
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #d4af37; /* Or pâle */
+    margin: 18px auto;
+    border-radius: 2px;
+}
+
+/* === CONTROLES === */
+.controles {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 45px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.controles input, .controles button {
+    padding: 15px 22px;
+    border: 1.8px solid #722f37;
+    border-radius: 35px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    background: rgba(245, 240, 230, 0.95); /* Beige crème clair */
+    color: #4a1c1c;
+    backdrop-filter: blur(12px);
+    transition: all 0.4s ease;
+    box-shadow: 0 3px 10px rgba(114, 47, 55, 0.1);
+}
+
+.controles input::placeholder {
+    color: rgba(74, 28, 28, 0.6);
+    font-style: italic;
+}
+
+.controles input:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.25);
+    background: white;
+}
+
+.controles button {
+    background: linear-gradient(45deg, #722f37, #8b3a3a);
+    color: #f5f0e6;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+}
+
+.controles button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(114, 47, 55, 0.25);
+    background: linear-gradient(45deg, #8b3a3a, #722f37);
+}
+
+/* === GRILLE DE CARTES PLUS GRANDES === */
+#liste-produits {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* CARTES PLUS GRANDES */
+    gap: 35px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* === CHAQUE CARTE === */
+#liste-produits li {
+    background: white;
+    border-radius: 22px;
+    overflow:hidden;
+    box-shadow: 0 12px 35px rgba(114, 47, 55, 0.12);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 2px solid rgba(212, 175, 55, 0.2);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#liste-produits li:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(114, 47, 55, 0.18);
+    border-color: #d4af37;
+}
+
+/* === IMAGE — 100% VISIBLES, COMPLÈTES, CENTRÉES === */
+.produit-image {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;           /* ← IMAGE COMPLÈTE, SANS RECADRAGE */
+    background: #fdfaf7;          /* ← Fond beige crème (même que la carte) */
+    padding: 15px;                 /* ← Espace autour de l'image */
+    border-bottom: 4px solid #722f37;
+    transition: transform 0.6s ease;
+    box-sizing: border-box;
+}
+
+#liste-produits li:hover .produit-image {
+    transform: scale(1.03);        /* Léger zoom au hover */
+}
+
+/* === TEXTE CENTRÉ === */
+#liste-produits li > div {
+    padding: 25px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background: #fdfaf7; /* Beige très clair */
+}
+
+#liste-produits li strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.45rem;
+    color: #722f37;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+#liste-produits li div > span {
+    color: #8b5a2b; /* Marron doré */
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+
+/* === MESSAGE VIDE === */
+#liste-produits:empty::after {
+    content: "Aucun talon trouvé.";
+    grid-column: 1 / -1;
+    text-align: center;
+    font-style: italic;
+    color: #722f37;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+}
